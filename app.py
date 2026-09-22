@@ -5,8 +5,8 @@ import os
 import openpyxl
 import pandas as pd
 
-# 구글 Gemini API 키 설정 (공백이나 줄바꿈 없이 정확히 입력하세요)
-genai.configure(api_key="여기에_구글_API_키를_입력하세요")
+# OpenAI 클라이언트 설정 (실제 API 키로 교체하세요)
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # 비파법사 페르소나 부여 (AI에게 역할을 지시하는 시스템 프롬프트)
 biwa_hoshi_prompt = """
